@@ -1,0 +1,149 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lauta\\Desktop\\ORT\\Semestre 3\\P3\\OblP3\\ClienteObl\\ClienteObligatorioP3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF3B316-330D-477F-82CD-9BB58D24F264}|ClienteObligatorioP3\\ClienteObligatorioP3.csproj|c:\\users\\lauta\\desktop\\ort\\semestre 3\\p3\\oblp3\\clienteobl\\clienteobligatoriop3\\clienteobligatoriop3\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AF3B316-330D-477F-82CD-9BB58D24F264}|ClienteObligatorioP3\\ClienteObligatorioP3.csproj|solutionrelative:clienteobligatoriop3\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF3B316-330D-477F-82CD-9BB58D24F264}|ClienteObligatorioP3\\ClienteObligatorioP3.csproj|c:\\users\\lauta\\desktop\\ort\\semestre 3\\p3\\oblp3\\clienteobl\\clienteobligatoriop3\\clienteobligatoriop3\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9AF3B316-330D-477F-82CD-9BB58D24F264}|ClienteObligatorioP3\\ClienteObligatorioP3.csproj|solutionrelative:clienteobligatoriop3\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF3B316-330D-477F-82CD-9BB58D24F264}|ClienteObligatorioP3\\ClienteObligatorioP3.csproj|c:\\users\\lauta\\desktop\\ort\\semestre 3\\p3\\oblp3\\clienteobl\\clienteobligatoriop3\\clienteobligatoriop3\\controllers\\enviocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AF3B316-330D-477F-82CD-9BB58D24F264}|ClienteObligatorioP3\\ClienteObligatorioP3.csproj|solutionrelative:clienteobligatoriop3\\controllers\\enviocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF3B316-330D-477F-82CD-9BB58D24F264}|ClienteObligatorioP3\\ClienteObligatorioP3.csproj|c:\\users\\lauta\\desktop\\ort\\semestre 3\\p3\\oblp3\\clienteobl\\clienteobligatoriop3\\clienteobligatoriop3\\views\\envio\\enviosusuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9AF3B316-330D-477F-82CD-9BB58D24F264}|ClienteObligatorioP3\\ClienteObligatorioP3.csproj|solutionrelative:clienteobligatoriop3\\views\\envio\\enviosusuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF3B316-330D-477F-82CD-9BB58D24F264}|ClienteObligatorioP3\\ClienteObligatorioP3.csproj|c:\\users\\lauta\\desktop\\ort\\semestre 3\\p3\\oblp3\\clienteobl\\clienteobligatoriop3\\clienteobligatoriop3\\models\\dtoenvioporfechas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AF3B316-330D-477F-82CD-9BB58D24F264}|ClienteObligatorioP3\\ClienteObligatorioP3.csproj|solutionrelative:clienteobligatoriop3\\models\\dtoenvioporfechas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 16,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Lauta\\Desktop\\ORT\\Semestre 3\\P3\\OblP3\\ClienteObl\\ClienteObligatorioP3\\ClienteObligatorioP3\\appsettings.json",
+              "RelativeDocumentMoniker": "ClienteObligatorioP3\\appsettings.json",
+              "ToolTip": "C:\\Users\\Lauta\\Desktop\\ORT\\Semestre 3\\P3\\OblP3\\ClienteObl\\ClienteObligatorioP3\\ClienteObligatorioP3\\appsettings.json",
+              "RelativeToolTip": "ClienteObligatorioP3\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-26T21:30:47.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EnvioController.cs",
+              "DocumentMoniker": "C:\\Users\\Lauta\\Desktop\\ORT\\Semestre 3\\P3\\OblP3\\ClienteObl\\ClienteObligatorioP3\\ClienteObligatorioP3\\Controllers\\EnvioController.cs",
+              "RelativeDocumentMoniker": "ClienteObligatorioP3\\Controllers\\EnvioController.cs",
+              "ToolTip": "C:\\Users\\Lauta\\Desktop\\ORT\\Semestre 3\\P3\\OblP3\\ClienteObl\\ClienteObligatorioP3\\ClienteObligatorioP3\\Controllers\\EnvioController.cs",
+              "RelativeToolTip": "ClienteObligatorioP3\\Controllers\\EnvioController.cs",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAqwJ4AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T19:56:32.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EnviosUsuario.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lauta\\Desktop\\ORT\\Semestre 3\\P3\\OblP3\\ClienteObl\\ClienteObligatorioP3\\ClienteObligatorioP3\\Views\\Envio\\EnviosUsuario.cshtml",
+              "RelativeDocumentMoniker": "ClienteObligatorioP3\\Views\\Envio\\EnviosUsuario.cshtml",
+              "ToolTip": "C:\\Users\\Lauta\\Desktop\\ORT\\Semestre 3\\P3\\OblP3\\ClienteObl\\ClienteObligatorioP3\\ClienteObligatorioP3\\Views\\Envio\\EnviosUsuario.cshtml",
+              "RelativeToolTip": "ClienteObligatorioP3\\Views\\Envio\\EnviosUsuario.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-26T19:56:35.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DTOEnvioPorFechas.cs",
+              "DocumentMoniker": "C:\\Users\\Lauta\\Desktop\\ORT\\Semestre 3\\P3\\OblP3\\ClienteObl\\ClienteObligatorioP3\\ClienteObligatorioP3\\Models\\DTOEnvioPorFechas.cs",
+              "RelativeDocumentMoniker": "ClienteObligatorioP3\\Models\\DTOEnvioPorFechas.cs",
+              "ToolTip": "C:\\Users\\Lauta\\Desktop\\ORT\\Semestre 3\\P3\\OblP3\\ClienteObl\\ClienteObligatorioP3\\ClienteObligatorioP3\\Models\\DTOEnvioPorFechas.cs",
+              "RelativeToolTip": "ClienteObligatorioP3\\Models\\DTOEnvioPorFechas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T19:23:55.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Lauta\\Desktop\\ORT\\Semestre 3\\P3\\OblP3\\ClienteObl\\ClienteObligatorioP3\\ClienteObligatorioP3\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ClienteObligatorioP3\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Lauta\\Desktop\\ORT\\Semestre 3\\P3\\OblP3\\ClienteObl\\ClienteObligatorioP3\\ClienteObligatorioP3\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ClienteObligatorioP3\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwCQAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T19:08:35.861Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

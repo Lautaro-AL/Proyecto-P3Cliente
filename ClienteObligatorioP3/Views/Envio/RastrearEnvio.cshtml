@@ -1,0 +1,116 @@
+﻿@model ClienteObligatorioP3.Models.DTOEnvio
+
+@{
+    ViewData["Title"] = "Rastrear Envío";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            
+
+
+            <div class="card shadow rounded-4 border-0 mb-4">
+                <div class="card-body p-4">
+                    <div class="mb-3">
+                        <a asp-controller="Home" asp-action="Index" class="btn btn-outline-secondary">
+                            ← Volver al inicio
+                        </a>
+                    </div>
+                    <h3 class="text-primary text-center mb-4">📦 Seguimiento de Envíos</h3>
+
+                    <form asp-action="RastrearEnvio" method="post">
+                        <div class="input-group mb-3">
+                            <input name="numTrack" type="number" class="form-control" placeholder="Ingrese número de tracking" required />
+                            <button type="submit" class="btn btn-primary">Buscar</button>
+                        </div>
+                    </form>
+
+                    <div class="container mt-5">
+                        @if (Model != null)
+                        {
+                            <div class="card shadow-sm rounded-4 mb-4">
+                                <div class="card-header bg-primary text-white">
+                                    <h4>📦 Detalles del Envío</h4>
+                                </div>
+                                <div class="card-body">
+                                    <dl class="row">
+                                        <dt class="col-sm-4">Número de Tracking:</dt>
+                                        <dd class="col-sm-8">@Model.NumTracking</dd>
+
+                                        <dt class="col-sm-4">Tipo de Envío:</dt>
+                                        <dd class="col-sm-8">@Model.tipoEnvio</dd>
+
+                                        <dt class="col-sm-4">Peso (kg):</dt>
+                                        <dd class="col-sm-8">@Model.Peso</dd>
+
+                                        <dt class="col-sm-4">Estado Actual:</dt>
+                                        <dd class="col-sm-8">@Model.Estado</dd>
+                                        @if (Model.Direccion is null)
+                                        {
+                                            <dt class="col-sm-4">Agencia de Envío:</dt>
+                                            <dd class="col-sm-8">@Model.AgenciaEnvio.Nombre</dd>
+                                        }
+
+                                        @if (Model.AgenciaEnvio is null)
+                                        {
+                                            <dt class="col-sm-4">Dirección de Destino:</dt>
+                                            <dd class="col-sm-8">@Model.Direccion</dd>
+
+                                            <dt class="col-sm-4">Entrega con Valor:</dt>
+                                            <dd class="col-sm-8">@((Model.valorDeEntrega ?? false) ? "Sí" : "No")</dd>
+                                        }
+
+                                        <dt class="col-sm-4">Fecha de Finalización:</dt>
+                                        <dd class="col-sm-8">@Model.FechaFinalizacion?.ToString("dd/MM/yyyy")</dd>
+                                    </dl>
+                                </div>
+                            </div>
+
+                            <div class="card shadow-sm rounded-4">
+                                <div class="card-header bg-secondary text-white">
+                                    <h5>📍 Seguimientos</h5>
+                                </div>
+                                <div class="card-body">
+                                    @if (Model.Seguimiento != null && Model.Seguimiento.Any())
+                                    {
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>Mensaje</th>
+                                                    <th>Fecha</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach (var seg in Model.Seguimiento)
+                                                {
+                                                    <tr>
+                                                        <td>@seg.Mensaje</td>
+                                                        <td>@seg.Fecha?.ToString("dd/MM/yyyy HH:mm")</td>
+                                                    </tr>
+                                                }
+                                            </tbody>
+                                        </table>
+                                    }
+                                    else
+                                    {
+                                        <p class="text-muted">Este envío no tiene seguimientos registrados aún.</p>
+                                    }
+                                </div>
+                            </div>
+                        }
+                        else if (ViewBag.Mensaje is not null)
+                        {
+                            <div class="alert alert-warning text-center">
+                                <strong>No se encontraron datos para el número de tracking ingresado.</strong>
+                            </div>
+                        }
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,102 @@
+﻿@model IEnumerable<ClienteObligatorioP3.Models.DTOEnvio>
+
+@{
+    ViewData["Title"] = "Mis Envíos";
+}
+
+<div class="container-fluid min-vh-100 d-flex align-items-center justify-content-center">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-10">
+                <div class="card border-0 shadow-lg rounded-4 p-5 bg-white">
+
+                    <div class="mb-4">
+                        <div style="font-size: 3rem;">🚚📦</div>
+                        <h2 class="fw-bold text-primary mt-3">Mis Envíos</h2>
+                        <p class="fs-5 text-muted mt-2">
+                            Aquí podés ver todos tus envíos realizados.
+                        </p>
+                    </div>
+                        <table class="table table-hover align-middle">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Tracking</th>
+                                    <th>Tipo</th>
+                                    <th>Estado</th>
+                                    <th>Fecha Finalización</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var envio in Model)
+                                {
+                                    <tr>
+                                        <td>@envio.NumTracking</td>
+                                        <td>@envio.tipoEnvio</td>
+                                        <td>@envio.Estado</td>
+                                        <td>@(envio.FechaFinalizacion?.ToString("dd/MM/yyyy") ?? "En curso")</td>
+                                        <td>
+                                            <a asp-action="DetalleSeguimiento" asp-route-numtracking="@envio.NumTracking"
+                                               class="btn btn-outline-primary btn-sm rounded-pill px-3">
+                                                Ver Seguimiento
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    
+
+                    <div class="mt-4 text-muted small">
+                        Podés hacer click en "Ver Seguimiento" para consultar el detalle de cada envío.
+                    </div>
+                    @if (@ViewBag.Error is not null)
+                    {
+                        <div class="mt-4 text-danger small">
+                            @ViewBag.Error
+                        </div>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+@* @model IEnumerable<ClienteObligatorioP3.Models.DTOEnvio>
+
+<h2>Mis Envíos</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tracking</th>
+            <th>Tipo</th>
+            <th>Estado</th>
+            <th>Fecha Finalización</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var envio in Model)
+        {
+            <tr>
+                <td>@envio.NumTracking</td>
+                <td>@envio.tipoEnvio</td>
+                <td>@envio.Estado</td>
+                <td>@(envio.FechaFinalizacion?.ToString("dd/MM/yyyy"))</td>
+                <td>
+                    <a asp-action="DetalleSeguimiento" asp-route-numtracking="@envio.NumTracking" class="btn btn-sm btn-primary">
+                        Ver Seguimiento
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+ *@

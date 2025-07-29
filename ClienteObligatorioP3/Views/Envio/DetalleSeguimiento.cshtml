@@ -1,0 +1,89 @@
+﻿@model IEnumerable<ClienteObligatorioP3.Models.DTOSeguimiento>
+
+@{
+    ViewData["Title"] = "Detalle de Seguimiento";
+}
+
+<div class="container-fluid min-vh-100 d-flex align-items-center justify-content-center">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+                <div class="card border-0 shadow-lg rounded-4 p-5 bg-white">
+
+                    <div class="mb-4">
+                        <div style="font-size: 3rem;">🔍📦</div>
+                        <h2 class="fw-bold text-primary mt-3">Detalle de Seguimiento</h2>
+                        <p class="fs-5 text-muted mt-2">
+                            Consulta el estado detallado de tu envío.
+                        </p>
+                    </div>
+
+                    @if (Model == null || !Model.Any())
+                    {
+                        <div class="alert alert-info" role="alert">
+                            No hay detalles de seguimiento disponibles para este envío.
+                        </div>
+                    }
+                    else
+                    {
+                        <ul class="list-group text-start">
+                            @foreach (var seguimiento in Model)
+                            {
+                                <li class="list-group-item d-flex flex-column">
+                                    <strong>@seguimiento.Fecha.ToString()</strong>
+                                    <small class="text-muted">@seguimiento.Mensaje</small>
+                                </li>
+                            }
+                        </ul>
+                    }
+
+                    <div class="mt-4 text-center">
+                        <a asp-action="EnviosUsuario" class="btn btn-outline-primary px-4 rounded-pill">
+                            ← Volver a mis envíos
+                        </a>
+                    </div>
+                    @if (@ViewBag.Error is not null)
+                    {
+                        <div class="mt-4 text-danger small">
+                            @ViewBag.Error
+                        </div>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@* @model IEnumerable<ClienteObligatorioP3.Models.DTOSeguimiento> 
+
+
+<h2>Seguimiento del Envío</h2>
+
+@if (Model == null || !Model.Any())
+{
+    <p>No hay seguimientos registrados para este envío.</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Comentario</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var seguimiento in Model)
+            {
+                <tr>
+                    <td>@seguimiento.Fecha.ToString()</td> 
+                    <td>@seguimiento.Mensaje</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<a asp-action="EnviosUsuarioAsync">Volver a mis envíos</a> *@

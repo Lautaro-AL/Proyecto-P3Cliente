@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ClienteObligatorioP3.props" />
+</Project>

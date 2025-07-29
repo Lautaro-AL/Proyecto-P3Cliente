@@ -1,0 +1,82 @@
+﻿@model ClienteObligatorioP3.Models.DTOEnvioPorFechas
+
+@{
+    ViewData["Title"] = "Buscar Envíos por Fechas";
+    var listaEnvios = ViewBag.Envios as List<ClienteObligatorioP3.Models.DTOEnvio>;
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="card border-0 shadow-lg rounded-4 p-5 bg-white">
+
+
+                <div class="text-center mb-4">
+                    <div style="font-size: 2.5rem;">📦🗓️</div>
+                    <h2 class="fw-bold text-primary mt-2">Buscar Envíos por Rango de Fechas</h2>
+                    <p class="text-muted">Ingresá un rango de fechas y estado para ver los envíos existentes.</p>
+                </div>
+
+
+                <form asp-action="PorFechas" method="post" class="mb-4">
+                    <div class="row g-3 justify-content-center">
+                        <div class="col-md-8">
+                            <label asp-for="Estado" class="form-label">Estado</label>
+                            <input asp-for="Estado" type="text" class="form-control" />
+                        </div>
+                        <div class="col-md-5">
+                            <label asp-for="F1" class="form-label">Desde</label>
+                            <input asp-for="F1" type="date" class="form-control" required />
+                        </div>
+                        <div class="col-md-5">
+                            <label asp-for="F2" class="form-label">Hasta</label>
+                            <input asp-for="F2" type="date" class="form-control" required />
+                        </div>
+                        <div class="col-12 text-center mt-3">
+                            <button type="submit" class="btn btn-primary px-5">
+                                🔍 Buscar
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                @if (listaEnvios != null)
+                {
+                    if (!listaEnvios.Any())
+                    {
+                        <div class="alert alert-info text-center mt-4">
+                            No se encontraron envíos para el rango de fechas seleccionado.
+                        </div>
+                    }
+                    else
+                    {
+                        <ul class="list-group list-group-flush">
+                            @foreach (var envio in listaEnvios)
+                            {
+                                <li class="list-group-item d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center py-4">
+                                    <div class="me-3">
+                                        <h5 class="mb-1 text-primary fw-bold">📦 Tracking: @envio.NumTracking</h5>
+                                        <p class="mb-1 text-muted">Tipo: @envio.tipoEnvio</p>
+                                        <p class="mb-1">Estado: <strong>@envio.Estado</strong></p>
+                                        <p class="mb-0 text-muted">
+                                            Finalizado: @(envio.FechaFinalizacion?.ToString("dd/MM/yyyy") ?? "En curso")
+                                        </p>
+                                    </div>
+
+                                </li>
+                            }
+                        </ul>
+                    }
+                }
+
+                @if (ViewBag.Error != null)
+                {
+                    <div class="alert alert-danger text-center mt-4">
+                        @ViewBag.Error
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+</div>
